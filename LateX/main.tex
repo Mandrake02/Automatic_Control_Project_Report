@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{pgfplots}
+\usepackage[backend=biber, style=numeric]{biblatex}
+\addbibresource{main.bib}
+
+\begin{document}
+	
+	\input{Contents/titlepage.tex}
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\section{Introduzione}
+	\label{se:intro}
+	\input{Contents/1_Intro.tex}
+
+	\newpage
+
+	\section{La base dell'AI: un piccolo sguardo alle CNNs}
+	\label{se:cnn}
+	\input{Contents/2_CNN.tex}
+
+	\newpage
+
+	\section{Le applicazioni pratiche dell'AI nell'agricoltura: I veicoli autonomi}
+	\label{se:app_pra}
+	\input{Contents/3_App_Pra.tex}
+	
+	\newpage
+
+	\section{Le applicazioni pratiche dell'AI nell'agricoltura: L'analisi delle immagini agricole}
+	\label{se:app_pra_2}
+	\input{Contents/4_App_Pra_2.tex}
+
+	\newpage
+
+	\section{Conclusioni}
+	\label{se:conc}
+	\input{Contents/6_Conc.tex}
+
+	\newpage
+
+	\nocite{*}
+	\printbibliography %bibliografia
+\end{document}
+
